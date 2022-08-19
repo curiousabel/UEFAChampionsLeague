@@ -1,7 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import NextImage from 'next/image'
 import styles from '../styles/Home.module.css'
 import SearchParam from "../component/SearchParams"
+import chicagostlye from "../styles/chicago.module.css"
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -14,6 +15,58 @@ export default function Home() {
 
  
         <SearchParam/>
+        
+        <div className={chicagostlye.flex }>
+      <section className='relative overflow-hidden'>
+      <div className='PlayerSummary_teamLogoBG__3OBn7'>
+      <div className='TeamLogo_block__1FJrR'>
+      <NextImage src="/chicagobull_logo.svg" width={120} height={152}/>
+       
+      </div>
+        </div>
+        <div className='relative block mx-auto bg-transparent max-w-screen-xxl'>
+        <div className='flex px-10 lg:px-20'>
+        <div className='block w-1/2 md:w-1/3'>
+        <div className='absolute w-16 min-w-0 mt-5 sm:w-20 md:w-24 lg:w-32'>
+        <a href="/team/1610612741/bulls/" className='Anchor_complexLink__2NtkO'>
+
+        <div className='TeamLogo_block__1FJrR'>
+        <NextImage src="/chicagobull_logo.svg" height={20} width={20} title="Chicago Bulls Logo" alt="Chicago Bulls Logo" className='TeamLogo_logo__1CmT9' loading="lazy"/>
+          </div>
+          </a>
+
+          </div>
+          <NextImage height={	241 } width={330 } className="PlayerImage_image__1smob w-10/12 mx-auto mt-16 md:mt-24" alt="Lonzo Ball Headshot" src='/lonzo_ball.png' loading="lazy"/>
+       
+
+
+          </div>
+          <div className="w-1/2 md:w-2/3 flex flex-col md:flex-row justify-center md:justify-between items-start md:items-center">
+          <div className="flex flex-col text-white">
+          <p className="t11 md:t2">Chicago Bulls | #2 | Guard</p>
+        <p className="PlayerSummary_playerNameText__K7ZXO">Lonzo</p>
+        <p className="PlayerSummary_playerNameText__K7ZXO">Ball</p>
+            </div>
+
+            <div className="flex flex-col">
+            <button data-track="click" data-type="button" data-id="nba:players:player:stats:favorite:button" data-text="FAVORITE" data-content="Lonzo Ball" className="PlayerSummary_actionButton__3vWGw" type="button">
+            
+            <span className="t5 PlayerSummary_normalLineHeight__-vjrC">FAVORITE</span>
+            
+            </button>
+            <a data-track="click" data-type="button" data-id="nba:players:player:stats:compare-players:button" data-text="COMPARE PLAYERS" data-content="Lonzo Ball" href="/stats/vs/#!/?PlayerID=1628366" className="hidden mt-2 sm:block Anchor_complexLink__2NtkO">
+            <button className="PlayerSummary_actionButton__3vWGw" type="button">
+            <span className="t5">COMPARE PLAYERS</span>
+              </button>
+              </a>
+            </div>
+            </div>
+          </div>
+          </div>
+
+        
+             </section>
+         </div>
        
     </div>
   )
