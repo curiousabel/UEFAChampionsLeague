@@ -1,0 +1,12 @@
+.bg-teams-CHI {
+    background-color: #ce1141;
+   
+}
+.flexcol {
+    flex-direction: column;
+}
+.flex {
+    display: flex;
+       background-color: #ce1141;
+       
+}
